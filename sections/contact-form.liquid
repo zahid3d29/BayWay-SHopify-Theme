@@ -1,5 +1,6 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
+
 <div class="contact page-width page-width--narrow spaced-section">
   <h2 class="title">{{ section.settings.heading | escape }}</h2>
   {%- form 'contact', id: 'ContactForm' -%}
@@ -83,6 +84,12 @@
       "id": "heading",
       "default": "Contact form",
       "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Headings",
+      "default": "#3d4246"
     }
   ],
   "presets": [

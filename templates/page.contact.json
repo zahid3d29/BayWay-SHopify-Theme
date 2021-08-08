@@ -6,7 +6,8 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": ""
+        "heading": "",
+        "color_heading": "#3d4246"
       }
     }
   },
