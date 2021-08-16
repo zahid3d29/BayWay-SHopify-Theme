@@ -114,12 +114,49 @@
         "color_scheme": "accent-2",
         "full_width": true
       }
+    },
+    "1629129220f8b727e7": {
+      "type": "rich-text-two",
+      "blocks": {
+        "1629129220f8b727e7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "This is rich text 2",
+            "heading_size": "medium"
+          }
+        },
+        "1629129220f8b727e7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is rich text 2 description<\/p>"
+          }
+        },
+        "1629129220f8b727e7-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button 2",
+            "button_link": "",
+            "button_style_secondary": true,
+            "button_bg_color": false
+          }
+        }
+      },
+      "block_order": [
+        "1629129220f8b727e7-0",
+        "1629129220f8b727e7-1",
+        "1629129220f8b727e7-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
     "image_text",
-    "162912910310d1f81a"
+    "162912910310d1f81a",
+    "1629129220f8b727e7"
   ]
 }
