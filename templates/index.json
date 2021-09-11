@@ -102,10 +102,10 @@
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
+            "button_link": "shopify:\/\/products\/chain-bracelet",
+            "button_style_secondary": true,
             "button_bg_color": false,
-            "button_show_hide": false
+            "border_color": false
           }
         }
       },
@@ -115,8 +115,8 @@
         "16313317302233941e-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "color_scheme": "accent-1",
+        "full_width": false
       }
     }
   },
