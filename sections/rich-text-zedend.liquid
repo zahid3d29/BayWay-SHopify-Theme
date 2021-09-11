@@ -3,6 +3,7 @@
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
+{% comment %} <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript> {% endcomment %}
 
 <div class="rich-text{% if section.settings.full_width %} rich-text--full-width{% endif %} color-{{ section.settings.color_scheme }}">
   <div class="rich-text__blocks">
@@ -11,7 +12,9 @@
         {%- when 'heading' -%}
           <h2 class="{% if block.settings.heading_size == 'small' %}h2{% else %}h1{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.description }}</div>
+          <div class="rich-text__text rte" {{ block.shopify_attributes }}>
+            {{ block.settings.description }}
+          </div>
         {%- when 'button' -%}
           <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
             {{ block.settings.button_label | escape }}
@@ -131,13 +134,7 @@
           "type": "checkbox",
           "id": "button_bg_color",
           "default": false,
-          "label": "Button BG Color"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_show_hide",
-          "default": false,
-          "label": "Button Show or Hide?"
+          "label": "BG COLORS"
         }
       ]
     }
