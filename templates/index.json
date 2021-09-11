@@ -105,7 +105,7 @@
             "button_link": "",
             "button_style_secondary": false,
             "button_bg_color": false,
-            "button_show_hide": true
+            "button_show_hide": false
           }
         }
       },
