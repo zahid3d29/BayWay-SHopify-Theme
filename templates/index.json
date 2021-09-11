@@ -116,7 +116,7 @@
       ],
       "settings": {
         "color_scheme": "accent-1",
-        "full_width": false
+        "full_width": true
       }
     }
   },
